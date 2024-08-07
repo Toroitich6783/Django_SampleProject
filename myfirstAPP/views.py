@@ -15,13 +15,6 @@ Map=geemap.Map()
 
 class Facebook(TemplateView):
 
-
-
-
-
-
-
-
     
     template_name = "index.html"
      
