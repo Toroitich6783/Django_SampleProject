@@ -1,0 +1,35 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django First Project </title>
+    <link href="{% static 'index.css'  %}" rel="stylesheet">
+
+
+    {{ Facebook.header.render|safe }}
+    {{ insta.header.render|safe }}
+
+
+<style>
+    
+</style>
+</head>
+<body>
+    <p class="Para">
+        {% lorem 5 b random %}
+    </p>
+
+    <a href="{% url 'Facebook' %}"><button class="btn btn-success">Login to FaceBook</button></a>
+
+    {{ Facebook.html.render|safe }}
+    {{ insta.html.render|safe }}
+
+
+    {{ Facebook.script.render|safe }}
+    {{ insta.script.render|safe }}
+
+</body>
+</html>
